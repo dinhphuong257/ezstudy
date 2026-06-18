@@ -122,7 +122,7 @@ body {
 .dmca-badge {
   display: inline-flex;
   flex: 0 0 auto;
-  width: 86px;
+  width: 110px;
   line-height: 0;
   opacity: 0.72;
   overflow: hidden;
@@ -135,10 +135,10 @@ body {
 
 .dmca-badge img {
   display: block;
-  width: 86px !important;
-  max-width: 86px !important;
+  width: 110px !important;
+  max-width: 110px !important;
   height: auto !important;
-  max-height: 38px !important;
+  max-height: 49px !important;
   object-fit: contain;
 }
 
@@ -243,13 +243,13 @@ body {
   }
 
   .dmca-badge {
-    width: 78px;
+    width: 96px;
   }
 
   .dmca-badge img {
-    width: 78px !important;
-    max-width: 78px !important;
-    max-height: 34px !important;
+    width: 96px !important;
+    max-width: 96px !important;
+    max-height: 43px !important;
   }
 }
 
