@@ -119,6 +119,29 @@ body {
   letter-spacing: 0;
 }
 
+.dmca-badge {
+  display: inline-flex;
+  flex: 0 0 auto;
+  width: 70px;
+  line-height: 0;
+  opacity: 0.72;
+  overflow: hidden;
+  transition: opacity 160ms ease;
+}
+
+.dmca-badge:hover {
+  opacity: 1;
+}
+
+.dmca-badge img {
+  display: block;
+  width: 70px !important;
+  max-width: 70px !important;
+  height: auto !important;
+  max-height: 31px !important;
+  object-fit: contain;
+}
+
 .ready .launch {
   animation: reveal 420ms ease both;
 }
@@ -219,6 +242,15 @@ body {
     font-size: 0.76rem;
   }
 
+  .dmca-badge {
+    width: 64px;
+  }
+
+  .dmca-badge img {
+    width: 64px !important;
+    max-width: 64px !important;
+    max-height: 28px !important;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
