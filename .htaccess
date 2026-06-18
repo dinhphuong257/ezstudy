@@ -1,0 +1,21 @@
+Options -Indexes
+
+<FilesMatch "^(index\.html|robots\.txt|og-thumbnail\.png|community-thumbnail\.png)$">
+  <IfModule mod_authz_core.c>
+    Require all granted
+  </IfModule>
+  <IfModule !mod_authz_core.c>
+    Order allow,deny
+    Allow from all
+  </IfModule>
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  <FilesMatch "^(index\.html|robots\.txt)$">
+    Header set Cache-Control "public, max-age=0, must-revalidate"
+  </FilesMatch>
+
+  <FilesMatch "^(og-thumbnail\.png|community-thumbnail\.png)$">
+    Header set Cache-Control "public, max-age=86400"
+  </FilesMatch>
+</IfModule>
